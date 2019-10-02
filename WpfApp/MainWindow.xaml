@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Margin="40"  FontWeight="Bold" FontSize="30" Content="Nhan vao toi" Grid.Column="1" Grid.Row="1" Click="Button_Click" ></Button>
+        <TextBlock VerticalAlignment="Center" TextAlignment="Center" x:Name="txtshow" Grid.Column="1" Grid.Row="2" FontSize="30" FontStyle="Italic" FontWeight="Bold" Foreground="Red"></TextBlock>
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Content="Button0" Grid.Row="0"></Button>
+            <Button Content="Button1" Grid.Row="1"></Button>
+            <Button Content="Button2" Grid.Row="2"></Button>
+        </Grid>
+       
+    </Grid>
+
+    
+</Window>
